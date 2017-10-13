@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pool Pros</title>
+	<link rel="stylesheet" type="text/css" href="/assets/dist/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<img src="assets/images/logo.svg" alt="Pool Pros logo">
+			<input type="text" name="zip" class="find-a-pro zip-small" id="find-small" placeholder="Find a Pro">
+			<input type="text" name="zip" class="find-a-pro zip-large" id="find-large" placeholder="Find a Pool Pro">
+			<button class="circle-menu"><img src="assets/images/menu-lines.svg" alt="menu button"></button>
+			<nav class="main-nav">
+				<button class="close-menu menu-window"><img src="assets/images/x-vector.png" alt=""></button>
+				<h3 class="menu-window">Menu</h3>
+				<ul>
+					<li><a href="#">Pools & Spas <span class="menu-window next">next</span></a></li>
+					<li><a href="#">Supplies <span class="menu-window next">next</span></a></li>
+					<li><a href="#">Resources <span class="menu-window next">next</span></a></li>
+					<li><a href="#">Services <span class="menu-window next">next</span></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+
+	<div class="main">
+		<div class="filter-section">
+			<div class="container">
+				<div class="form-heading">
+					<p class="location js-location">Enter a zip code!</p>
+					<div class="dropdown">
+						<p class="filter-menu">Filter Results</p>
+						<button class="dropdown-btn">&#9662;</button>
+					</div>
+				 </div>
+				
+				<form class="filter-box">
+					<ul>
+						<li>
+							<input type="checkbox" id="service" name="filter" value="service">
+							<label for="service" class="checkbox"></label>
+							<label for="service">Service</label>
+						</li>
+
+						<li>
+							<input type="checkbox" id="installation" name="filter" value="installation">
+							<label for="installation" class="checkbox"></label>
+							<label for="installation">Installation</label>
+						</li>
+						
+						<li>
+							<input type="checkbox" id="residential" name="filter" value="residential">
+							<label for="residential" class="checkbox"></label>
+							<label for="residential">Residential</label>
+						</li>
+						
+						<li>
+							<input type="checkbox" id="commercial" name="filter" value="commercial">
+							<label for="commercial" class="checkbox"></label>
+							<label for="commercial">Commercial</label>
+							<img src="assets/images/tool-tip-btn.svg" class="tool-tip" alt="tool tip icon">
+							<div class="tool-tip-window">
+								<p class="tool-tip-p">Some info about commercial services here</p>
+							</div>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+
+		<div class="container pros js-pros">
+			<!-- dealers output here -->
+		</div>
+	</div>
+
+	<footer>
+		<div class="footer-top">
+			<div class="container connect">
+				<img src="assets/images/pool-pros-logo-footer.png" alt="Pool Pros Logo" class="logo-ftr">
+				<p>Connect with us</p>
+				<div class="media-block">
+					<img src="assets/images/twitter-icon.png" alt="" class="social-media">
+					<img src="assets/images/facebook-icon.png" alt="" class="social-media">
+					<img src="assets/images/youtube-icon.png" alt="" class="social-media">
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="terms">
+				<div class="distributors">
+					<div class="container">
+						<div class="dist-content">
+							<p>Dealers and Distributors</p>
+							<p class="line">|</p>
+							<p>Commercial Service <a href="commercial.html" target="_blank"><img src="assets/images/action-icon.png" alt=""></a></p>
+							<hr class="line">
+						</div>
+					</div>
+				</div>
+				<div class="container legal">
+					<p>&copy; 2017 Pool Pros</p>
+					<p>|</p>
+					<p>Privacy Policy</p>
+					<p>|</p>
+					<p>Terms and conditions</p>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/dist/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,801 @@
+@import "normalize";
+@import "partials/variables";
+
+
+// general 
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 344px;
+
+	@media (min-width: 720px) {
+		margin: 0 auto;
+		max-width: 1090px;
+	}
+}
+
+
+// header 
+
+header {
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.31);
+	padding: 10px 10px 0 0;
+	position: relative;
+
+	.zip-large {
+		display: none;
+
+		@media (min-width: 720px) {
+			display: block;
+		}
+	}
+
+	@media (min-width: 720px) {
+			overflow: auto;
+			padding: 60px 40px 20px;
+
+			.zip-small {
+				display: none;
+			}
+		}
+
+	@media (max-width: 875px) and (min-width: 720px) {
+		text-align: center;
+
+		img {
+			float: left;
+		}
+	}
+	
+	.find-a-pro {
+		background-image: url('../../images/map-marker.svg');
+		background-repeat: no-repeat;
+		border-radius: 5px;
+		border: 2px solid $theme-color;
+		padding: 8px 0  7px 25px;
+		position: relative;
+		top: -12px;
+		width: 120px;
+
+
+		&::placeholder {
+			color: $theme-color;
+			font-family: 'Arial Black';
+			font-size: 13px;
+			font-weight: bold;
+			text-transform: uppercase;
+
+			@media (min-width: 720px) {
+				text-transform: none;
+			}
+		}
+
+		@media (min-width: 720px) {
+			background-position: 10px 3px;
+			border-width: 1px;
+			float: right;
+			padding: 10px 0 10px 35px;
+			position: static;
+			width: 176px;
+
+		}
+	}
+	
+	.circle-menu {
+		background-color: #fff;
+		border-radius: 100%;
+		border: 1px solid $dark-grey;
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.58);
+		float: right;
+		margin-bottom: -25px;
+		padding: 8px 15px;
+		position: relative;
+		right: -20px;
+		top: -55px;
+
+		@media (min-width: 720px) {
+			display: none;
+		}
+	}
+
+	.main-nav {
+		background-color: #fff;
+		border-bottom: 5px solid $menu-color;
+		border-top: 5px solid $menu-color;
+		box-shadow: 0 5px 4px 0 rgba(0,0,0,0.23);	
+		display: none;
+		margin: 0 auto;	
+		max-width: 390px;
+		position: fixed;
+		z-index: 1;
+
+
+		h3 {
+			clear: both;
+			color: #01529E;
+			font-family: $main-font, sans-serif;
+			text-align: center;
+		}
+
+		.close-menu {
+			background-color: #fff;
+			border: none;
+			float: right;
+			margin-right: 10px;
+			margin-top: 10px;
+		}
+
+		.next {
+			color: $menu-color;
+			float: right;
+			margin-left: 175px;
+		}
+
+		ul {
+			list-style: none;
+			padding-left: 0;
+
+			li {
+				background-color: $background-grey;
+				font-family: $main-font;
+				margin: 5px 0;
+				padding: 20px;
+
+
+				a {
+					color: #616161;
+					text-decoration: none;
+				}
+			}
+		}
+
+
+		@media (min-width: 720px) {
+			border: none;
+			box-shadow: none;
+			display: inline-block;
+			float: right;
+			max-width: 1090px;
+			position: static;
+
+			.menu-window {
+				display: none;
+			}
+
+			ul {
+				margin-right: 40px;
+
+				@media (max-width: 875px) and (min-width: 720px) {
+					margin-right: 0;
+				}
+
+
+				li {
+					background-color: #fff;
+					display: inline-block;
+					font-weight: 700;
+					margin: 0 25px;
+					padding: 0;
+
+					@media (max-width: 995px) {
+						margin: 0 10px;
+					}
+
+
+					a {
+						color: $secondary-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+// filters
+
+.main {
+	background-image: url('../../images/water-image-mobile.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family: $main-font, sans-serif;
+	margin-top: -10px;
+	padding-top: 100px;
+
+	@media (min-width: 540px) {
+		background-image: url('../../images/water-image-desktop.png');
+	}
+	
+	.filter-section {
+		background-color: $background-grey;
+		padding: 15px 0;
+
+		.form-heading {
+			overflow: auto;
+		}
+
+		@media (min-width:720px) {
+			border-radius: 5px;
+			margin: 0 auto 20px;
+			max-width: 1090px;
+			text-align: center;
+
+			.form-heading {
+				display: inline-block;
+			}
+		}
+
+		.location {
+			color: $theme-color;
+			display: inline-block;
+			font-weight: 700;
+			margin: 0;
+			position: relative;
+			top: 25px;
+
+			@media (min-width:720px) {
+				margin-right: 15px;
+				position: static;
+			}
+		}
+
+
+		.dropdown {
+			float: right;
+
+			@media (min-width:720px) {
+				display: inline-block;
+				float: none;
+			}
+		}
+
+		.filter-menu {
+			background-color: #fff;
+			border: 1px solid $border-color;
+			display: inline-block;
+			font-size: 15px;
+			font-weight: bold;
+			letter-spacing: .32px;
+			margin: 0;
+			padding: 19px 18px 13px;
+			position: relative;
+			top: 4px;
+
+			@media (min-width:720px) {
+				background-color: $background-grey;
+				border: none;
+				border-left: 2px solid #ECECEC;
+				display: inline-block;
+				position: static;
+			}
+
+		}
+
+		.dropdown-btn {
+			background-color: $background-grey;
+			border: 1px solid $border-color;
+			margin: 0 0 0 -5px;
+			padding: 16px 19px;
+
+			@media (min-width:720px) {
+				display: none;
+			}
+		}
+
+		.filter-box {
+			background-color: #fff;
+			border: 1px solid $border-color;
+			clear: both;
+			position: relative;
+
+			@media (min-width: 720px) {
+				background-color: $background-grey;
+				border: none;
+				display: inline-block;
+				position: relative;
+				top: -15px;
+			}
+
+			ul {
+				list-style: none;
+				padding-left: 15px;
+				position: relative;
+
+				li {
+					margin: 25px;
+
+					input[type=checkbox] {
+						display: none;
+					}
+
+					.checkbox {
+						background-color: #fff;
+						border-radius: 5px;
+						border: 1px solid $border-color;
+						display: inline-block;
+						height: 26px;
+						margin-right: 10px;
+						position: relative;
+						top: 6px;
+						width: 26px;
+					}
+
+					input:checked + .checkbox {
+						border: 9px solid $theme-color;
+					}
+
+					@media (min-width: 720px) {
+						float: left;
+						font-size: 12px;
+						margin: 0 25px;
+					}
+
+				}
+
+				.tool-tip {
+					margin-left: 12px;
+				}
+
+				.tool-tip-window {
+					background-color: $background-grey;
+					border-radius: 10px;
+					border: 1px solid $border-color;
+					display: none;
+					font-family: $main-font;
+					font-size: 12px;
+					padding: 15px;
+					position: absolute;
+					right: -10px;
+					top: 80px;
+					width: 150px;
+					z-index: 2;
+
+					@media (min-width: 720px) {
+						top: 40px;
+					}
+				}
+			}
+
+		}
+	}
+}
+
+
+// Results 
+
+.pros {
+
+	@media (min-width: 720px) {
+		max-width: 1090px;
+		text-align: center;
+	}
+
+	
+	.pro {
+		background-color: #fff;
+		border: 1px solid $border-color;
+		box-shadow: 0 2px 4px 0 rgba(0,0,0,0.11);
+		max-width: 344px;
+		padding-top: 15px;
+		position: relative;
+		text-align: center;
+		vertical-align: top;
+
+
+		@media (min-width: 720px) {
+			border-radius: 5px;
+			display: inline-block;
+			height: 498px;
+			margin: 5px;
+			padding-top: 0;
+			width: 422px;
+		}
+
+		.company-name {
+			color: $text-color;
+			font-size: 20px;
+			font-weight: 300;
+			margin: 20px auto;
+			vertical-align: middle;
+			width: 85%;
+
+			@media (min-width: 720px) {
+				height: 46px;
+				margin-bottom: 50px;
+			}
+		}
+
+		.divider {
+			display: none;
+
+			@media (min-width: 720px) {
+				display: block;
+				left: 30px;
+				position: absolute;
+				top: 75px;
+				width: 80%;
+			}
+		}
+
+		.phone-btn {
+			background-color: $theme-color;
+			border-radius: 2px;
+			color: #fff;
+			font-weight: 700;
+			padding-right: 8px;
+			padding: 5px;
+			text-align: left;
+			text-decoration: none;
+
+			@media (min-width: 720px) {
+				background-color: #fff;
+				color: $text-color;
+			}
+
+			img {
+				background-color: $secondary-color;
+				padding: 5px;
+				position: relative;
+				top: 5px;
+
+				@media (min-width: 720px) {
+					background-color: $theme-color;
+					border-radius: 100%;
+				}
+			}
+
+			.tap {
+				font-size: 8px;
+
+				@media (min-width: 720px) {
+					display: none;
+				}
+			}
+
+			.number {
+				position: relative;
+				top: 5px;
+
+				@media (min-width: 720px) {
+					font-size: 25px;
+					margin-top: 0;
+					position: static;
+				}
+			}
+
+			img, p {
+				display: inline-block;
+			}
+		}
+
+		ul {
+			list-style: none;
+			padding-left: 0;
+		}
+
+		.cant-talk {
+			color: $text-color;
+			font-size: 11px;
+			font-style: italic;
+		}
+
+		.contact {
+			background-color: #fff;
+			border-radius: 2px;
+			border: 1px solid $turquoise;
+			color: $secondary-color;
+			font-weight: 700;
+			padding: 15px 20px;
+
+			img {
+				margin-right: 10px;
+			}
+		}
+
+		.biz-hours {
+			font-weight: 700;
+			margin-bottom: 0;
+		}
+
+		.hours {
+			font-size: 12px;
+			line-height: 24px;
+			margin-bottom: 120px;
+			margin-top: 5px;
+
+			@media (min-width: 720px) {
+				margin-bottom: 140px;
+			}
+		}
+
+		.services {
+			background-color: $background-grey;
+			bottom: 0;
+			height: 110px;
+			position: absolute;
+			text-align: left;
+			width: 100%;
+
+
+			ul li {
+				display: inline-block;
+				font-size: 11px;
+				margin: 10px 15px;
+
+				img {
+					margin-right: 10px;
+				}
+			}
+
+			.services-list {
+				margin: 20px auto;
+				width: 85%;
+			}
+		}
+	}
+}
+
+
+// footer 
+
+footer {
+	color: #fff;
+	font-family: $main-font, sans-serif;
+	margin-top: 50px;
+
+
+	.footer-top {
+		background-color: $secondary-color;
+		overflow: auto;
+		padding-top: 30px;
+		position: relative;
+
+		@media (min-width: 720px) {
+			text-align: center;
+		}
+
+		.logo-ftr {
+			display: block;
+			margin: 0 auto 20px;
+		}
+
+		.connect p {
+			display: inline-block;
+			font-size: 15px;
+			font-weight: 700;
+			text-transform: uppercase;
+
+			@media (min-width: 720px) {
+				margin-right: 20px;
+			}
+		}
+
+		.media-block {
+			float: right;
+			position: relative;
+			top: 7px;
+
+			@media (min-width: 720px) {
+				display: inline-block;
+				float: none;
+				margin-left: 10px;
+				position: static;
+			}
+
+			.social-media {
+				margin: 0 5px;
+			}
+		}
+	}
+
+	.footer-bottom {
+		background-color: $theme-color;
+		text-align: center;
+
+		@media (min-width: 720px) {
+			.distributors {
+				background-color: $secondary-color;
+				position: absolute;
+				top: 0;
+				width: 100%;
+
+				.dist-content {
+					float: right;
+				}
+
+				.line {
+					display: none;
+				}
+			}
+		}
+
+		.distributors p {
+			display: inline-block;
+			font-size: 13px;
+			margin: 15px 5px 5px;
+
+			@media (min-width: 720px) {
+				font-size: 10px;
+				padding-bottom: 5px;
+			}
+		}
+
+		.legal p {
+			display: inline-block;
+			font-size: 12px;
+
+			@media (min-width: 720px) {
+				margin: 8px 10px;
+			}
+		}
+	}
+}
+
+
+// email modal
+
+.email-modal {
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+	height: 100%;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+
+	.close-modal {
+		background-color: transparent;
+		border: none;
+		color: $dark-grey;
+		float: right;
+		font-size: 30px;
+		position: relative;
+		right: -10px;
+		top: -20px;
+	}
+
+	.modal-content {
+		background-color: #fff;
+		font-family: $main-font, sans-serif;
+		margin: 150px auto;
+		max-width: 350px;
+		text-align: left;
+
+		.modal-header {
+			background-color: $secondary-color;
+			color: #fff;
+
+			.email-title {
+				font-size: 14px;
+				font-weight: 600;
+				margin-bottom: 5px;
+				padding-left: 11px;
+				padding-top: 25px;
+				text-transform: uppercase;
+			}
+
+			.modal-company-name {
+				font-size: 28px;
+				font-weight: 300;
+				margin-top: 0;
+				padding-bottom: 25px;
+				padding-left: 10px;
+			}
+		}
+
+		.modal-main {
+			margin: 20px auto;
+			position: relative;
+			width: 90%;
+
+			.instructions {
+				color: #6E6E6E;
+				font-size: 14px;
+				margin-bottom: 40px;
+			}
+
+			.text-label {
+				color: #616161;
+				display: block;
+				font-size: 14px;
+				font-weight: 600;
+				margin-bottom: 5px;
+				margin-top: 25px;
+			}
+
+			.circle {
+				color: $dark-grey;
+				float: right;
+				font-size: 20px;
+				position: relative;
+				top: -5px;
+			}
+
+			.circle-phone {
+				left: -80px;
+			}
+
+			.optional {
+				color: #BEBEBE;
+				float: right;
+				font-style: italic;
+				font-weight: 300;
+			}
+
+			.name, .phone, .email {
+				padding: 12px;
+				border: 1px solid $border-color;
+			}
+
+			.name, .email {
+				width: 100%;
+			}
+
+			.phone {
+				width: 75%;
+			}
+
+			textarea {
+				resize: none;
+				width: 100%;
+				border: 1px solid $border-color;
+			}
+
+			.form-fields {
+				border-bottom: 2px solid #ECECEC;
+				margin-bottom: 15px;
+				padding-bottom: 20px;
+			}
+
+			.radio-label {
+				font-size: 14px;
+				margin-right: 10px;
+			}
+
+			input[type=radio] {
+				display: none;
+			}
+
+			.checkbox {
+				background-color: $border-color;
+				border-radius: 3px;
+				border: 1px solid #000;
+				border: 1px solid $border-color;
+				display: inline-block;
+				height: 21px;
+				margin-right: 5px;
+				position: relative;
+				top: 3px;
+				width: 21px;
+			}
+
+			input:checked + .checkbox {
+				background-color: #fff;
+				border: 8px solid $theme-color;
+			}
+
+			.contact-form {
+				overflow: auto;
+			}
+
+			.submit-btn {
+				background-color: #fff;
+				border: none;
+				color: $menu-color;
+				float: right;
+				font-weight: 600;
+				margin-bottom: 10px;
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+
+
+

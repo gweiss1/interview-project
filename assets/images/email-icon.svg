@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="13px" viewBox="0 0 15 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>email icon rasterized</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect x="19" y="18" width="15" height="13" id="rect-1"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-110.000000, -666.000000)">
+            <g id="Dealer-Result-1" transform="translate(-23.000000, 469.000000)">
+                <g id="CTA" transform="translate(114.000000, 179.000000)">
+                    <g id="email-icon-rasterized">
+                        <image x="19" y="18" width="15" height="13" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAYAAAB2HjRBAAABc2lDQ1BJQ0MgUHJvZmlsZQAAKJF9kE0rRGEUx38zaLyMLMZCom4ZVmiMwpKxkLLQoLxt7lzzombu3O7cCdkqGwtlITbeFr6A2CprpYiUlK9AbKTrPDOj8VJOnc6v/3POec454A3qlpWuDEHGdOzoSESbnpnVfE/U0EqAMJpu5Kyh8fExxL7iT3u7xaPidZfq9ff9X6tbiOcM8FQL9xmW7QgPCrctOZbiBeFGW4YSXlacLPKG4liR9ws5k9Fh4RNhzUjpUue5Ee40UnYGvOqvYOxbTvIbZ9J5ozSP2sQfN6cmJDaLt5AjyggRNGLkWSSNQ5dEE5z4sqOKhrPWir2YTDnakFwgro2aRnenFg719IO65+87lbWszD7wChWbZS22DWfr0HRf1oJ70LAGpxeWbusFqULcm0jA8zHUz0DgCmrnconecHETfwSqHl33pR18W/Cx6brvB677cSjFD3BuFm9T6sXRHUyuwtgl7OxCh/RumP8E6i5ndGeyATgAAAD5SURBVCgVpdE/K0VhHAfw54oSi0Lp8gJYJYPyDgzCpJiYGHgB7DJQ/iyUgVFRJptNFomyMRCDUigScn1+uscg6Xbvtz6n5znnfM9znnNytb3zsymlDvK00kQNdWR5Nvjgjpuik5xywaScPFRprZbT1FmO8gSTvFFKXtw0ykyUB1mhh0v+y7mL3WwyFOVtFjili13+ypaTUbxgjfUoR6Y4oJ4Bpnkn8so4I7RwyBipOg7FxGsfM8wie3RyxBX9bNDAd7KVs3mzwT5zxH+NLcUCS+zwUzROlfznx98rxwNLTiXlQuynj3bytNFInM/292n8RHz9e6655ewLAi0znbCzxsMAAAAASUVORK5CYII="></image>
+                        <use fill-opacity="0" fill="#000000" fill-rule="evenodd" xlink:href="#rect-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
